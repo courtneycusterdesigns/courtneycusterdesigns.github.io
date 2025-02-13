@@ -6,16 +6,23 @@
 </head>
 
 <body>
-  <header>
-    <h1>Courtney Custer Designs</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="header">
+    <a href="index.html" class="logo"><img src="./resources/css/small.jpg" width="24px"/> Courtney Custer Designs</a>
+    <div class="header-right">
+      <a class="active" href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Shop
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="shop_all.html">All</a>
+          <a href="shop_earrings.html">Earrings</a>
+          <a href="shop_necklaces.html">Necklaces</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 
   <main>
     <section>

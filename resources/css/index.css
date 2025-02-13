@@ -1,10 +1,16 @@
+:root {
+    --tan: rgb(185, 126, 62);
+    --hovertan: rgb(152, 108, 61);
+    --darkbrown: rgb(56, 32, 3);
+  }
+
 * {
-    font-family: Georgia, Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
   
   
   h1 {
-    color: rgb(57, 46, 139);
+    color: var(--darkbrown);
   }
   
   
@@ -17,3 +23,131 @@
   a {
     text-decoration: none;
   }
+
+
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: var(--tan);
+    padding: 20px 10px;
+  }
+  
+/* Style the header links */
+.header a {
+    float: left;
+    color: var(--darkbrown);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: var(--hovertan);
+    color: var(--darkbrown);
+  }
+  
+/* Style the active/current link*/
+.header a.active {
+    background-color: var(--darkbrown);
+    color: var(--tan);
+  }
+  
+/* Float the link section to the right */
+.header-right {
+    float: right;
+  }
+  
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--darkbrown);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--hovertan);
+  }
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--tan);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--darkbrown);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--hovertan);
+  }
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  } 
