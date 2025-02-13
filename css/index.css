@@ -1,0 +1,19 @@
+* {
+    font-family: Georgia, Arial, sans-serif;
+  }
+  
+  
+  h1 {
+    color: rgb(57, 46, 139);
+  }
+  
+  
+  p, 
+  li {
+    font-size: 18px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
