@@ -70,9 +70,9 @@
     float: left;
     color: var(--darkbrown);
     text-align: center;
-    padding: 2vw; /*12px;*/
+    padding: 3vw; /*12px;*/
     text-decoration: none;
-    font-size: 4vw;/*28px;*/
+    font-size: 5vw;/*28px;*/
     line-height: 3vw; /*25px;*/
     border-radius: 1vw; /*4px;*/
   }
@@ -124,7 +124,7 @@
 /* Links inside the navbar */
 .navbar a {
     float: left;
-    font-size: 4vw; /*16px;*/
+    font-size: 5vw; /*16px;*/
     color: white;
     text-align: center;
     padding: 4vw; /*14px 16px;*/
@@ -142,8 +142,8 @@
     border: none;
     outline: none;
     color: var(--darkbrown);
-    font-size: 4vw; /*28px;*/
-    padding: 1vw 2vw; /*8px 18px;*/
+    font-size: 5vw; /*28px;*/
+    padding: 1.2vw 3vw; /*8px 18px;*/
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
