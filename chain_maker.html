@@ -11,7 +11,7 @@
     <a href="index.html" class="logo"><img src="./resources/small.jpg" width="70px"/></a>
     <a href="index.html" class="logo"></a>
     <div class="header-right">
-      <a class="active" href="index.html">Home</a>
+      <a href="index.html">Home</a>
       <div class="dropdown">
         <button class="dropbtn">Shop
           <i class="fa fa-caret-down"></i>
@@ -31,6 +31,24 @@
     <h2>Chain Creator</h2>
       <p>Customize your chain earrings by DOING WHATEVER PROCESS then add them to your cart!</p>
   </main>
+
+  <form 
+    method="POST" 
+    action="https://script.google.com/macros/s/AKfycbzEDfQ1RpSb6HC1i53emX9bOWdC-J01rhUFk-9ENRMEXel3jYtKQHowztaEtrpd6BI6/exec"
+  >
+    <input name="color" type="text" placeholder="Color" required>
+    <input name="charm_yn" type="text" placeholder="Charm Y/N" required>
+    <input name="charm_type" type="text" placeholder="Charm Type">
+    <input name="name" type="text" placeholder="Name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="street_address" type="text" placeholder="Street Address" required>
+    <input name="city" type="text" placeholder="City" required>
+    <input name="state" type="text" placeholder="State" required>
+    <input name="zip" type="text" placeholder="Zip" required>
+    <input name="venmo" type="text" placeholder="Venmo" required>
+    
+    <button type="submit">Send</button>
+  </form>
 
   <br>
   <footer class="footer">
