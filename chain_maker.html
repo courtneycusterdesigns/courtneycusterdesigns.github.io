@@ -52,6 +52,7 @@
   <form 
     method="POST" 
     action="https://script.google.com/macros/s/AKfycbwJj-x_cWQkwhdhXV6IZZJszDTLUs3vr7ffKoROWfy6_4wP5h_U39U3NZxfitUVTPMFCw/exec"
+    id="chain-form"
   >
     <input name="color" type="text" placeholder="Color" required>
     <input name="charm_type" type="text" placeholder="Charm Type">
@@ -66,6 +67,24 @@
     
     <button type="submit" onClick="window.location.href='index.html';">Submit Order</button>
   </form>
+
+  <script>
+    window.addEventListener("load", function() {
+      const form = document.getElementById('chain-form');
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+        .then(() => {
+          alert("Success!");
+        })
+      });
+    });
+  </script>
 
   <br>
   <footer class="footer">
