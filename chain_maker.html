@@ -45,16 +45,23 @@
 
   <main>
     <h1>Courtney Custer Designs</h1>
-    <h2>Chain Creator</h2>
-      <p>Customize your chain earrings by DOING WHATEVER PROCESS then add them to your cart!</p>
+    <h2>Chain Link Earrings</h2>
+      <p>Customize your chain link earrings by DOING WHATEVER PROCESS!</p>
   </main>
 
+  <p>Please review your selection and add your name, email, shipping address, and Venmo below. I will send you a Venmo request for the price shown. After your order is paid for, it will be packaged and shipped!</p>
+
+  <div class="form-wrapper">
   <form 
     method="POST" 
     action="https://script.google.com/macros/s/AKfycbwJj-x_cWQkwhdhXV6IZZJszDTLUs3vr7ffKoROWfy6_4wP5h_U39U3NZxfitUVTPMFCw/exec"
     id="chain-form"
   >
-    <input name="color" type="text" placeholder="Color" required>
+    <div>
+      <label class="form-label" for="firstName">Color</label>
+      <input class="form-box" name="color" type="text" placeholder="Color">
+    </div>
+    <!-- <input name="color" type="text" placeholder="Color" required>
     <input name="charm_type" type="text" placeholder="Charm Type">
     <input name="price" type="text" placeholder="Price" required>
     <input name="name" type="text" placeholder="Name" required>
@@ -63,11 +70,10 @@
     <input name="city" type="text" placeholder="City" required>
     <input name="state" type="text" placeholder="State" required>
     <input name="zip" type="text" placeholder="Zip" required>
-    <input name="venmo" type="text" placeholder="Venmo" required>
+    <input name="venmo" type="text" placeholder="Venmo" required> -->
     
-    <button type="submit" onClick="window.location.href='index.html';">Submit Order</button>
+    <button type="submit">Submit Order</button>
   </form>
-
   <script>
     window.addEventListener("load", function() {
       const form = document.getElementById('chain-form');
@@ -85,6 +91,10 @@
       });
     });
   </script>
+  </div>
+
+  <p>On successful submission, you will be redirrected to the home page.</p>
+  <p>Thank you for your support!</p>
 
   <br>
   <footer class="footer">
