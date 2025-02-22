@@ -5,21 +5,51 @@
   <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-    window.addEventListener("load", function() {
-      const form = document.getElementById('my-form');
-      form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        const data = new FormData(form);
-        const action = e.target.action;
-        fetch(action, {
-          method: 'POST',
-          body: data,
-        })
-        .then(() => {
-          alert("Success!");
-        })
+    const selectRadioCard = (cardNo) => {
+      /**
+      * Loop through all radio cards, and remove the class "selected" from those elements.
+      */
+      const allRadioCards = document.querySelectorAll(".radio-card");
+      allRadioCards.forEach((element, index) => {
+          element.classList.remove(["selected"]);
       });
-    });
+      /**
+      * Add the class "selected" to the card which user has clicked on.
+      */
+      const selectedCard = document.querySelector(".radio-card-" + cardNo);
+      selectedCard.classList.add(["selected"]);
+
+      // Set the hidden field value
+      const hiddenField = document.querySelector("input[name='color']");
+      hiddenField.value = selectedCard.querySelector(".radio-card-label").innerText;
+    };
+  </script>
+  <script>
+    const selectRadioCard2 = (cardNo) => {
+      /**
+      * Loop through all radio cards, and remove the class "selected" from those elements.
+      */
+      const allRadioCards = document.querySelectorAll(".radio-card2");
+      allRadioCards.forEach((element, index) => {
+          element.classList.remove(["selected"]);
+      });
+      /**
+      * Add the class "selected" to the card which user has clicked on.
+      */
+      const selectedCard = document.querySelector(".radio-card2-" + cardNo);
+      selectedCard.classList.add(["selected"]);
+
+      // Set the hidden field value
+      const hiddenField = document.querySelector("input[name='charm_type']");
+      hiddenField.value = selectedCard.querySelector(".radio-card2-label").innerText;
+    };
+  </script>
+  <script>
+    function modify_value()
+    {
+      var hidden_field = document.getElementsByName('color');
+      hidden_field.value = 'testvalue';
+    }
   </script>
 </head>
 
@@ -46,10 +76,210 @@
   <main>
     <h1>Courtney Custer Designs</h1>
     <h2>Chain Link Earrings</h2>
-      <p>Customize your chain link earrings by DOING WHATEVER PROCESS!</p>
+      <p>Customize your chain link earrings by selecting a color:</p>
   </main>
 
-  <p>Please review your selection and add your name, email, shipping address, and Venmo below. I will send you a Venmo request for the price shown. After your order is paid for, it will be packaged and shipped!</p>
+  <div id="radio-cards-container">
+    <!-- Radio Card 1 -->
+    <div class="radio-card radio-card-1" onclick="selectRadioCard('1')">
+        <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+        <div class="radio-card-check">
+            <input type="radio"></input>
+        </div>
+        <!-- Section to display the icon, label, and some additional text -->
+        <div class="text-center">
+            <div class="radio-card-icon">
+                <img src="./resources/product_images/chain_silver.jpeg" alt="silver" />
+            </div>
+            <div class="radio-card-label">
+                Silver
+            </div>
+            <div class="radio-card-label-description">
+                Silver chain link: $20.00
+            </div>
+        </div>
+    </div>
+    <!-- Radio Card 2 -->
+    <div class="radio-card radio-card-2" onclick="selectRadioCard('2')">
+        <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+        <div class="radio-card-check">
+          <input type="radio"></input>
+        </div>
+        <!-- Section to display the icon, label, and some additional text -->
+        <div class="text-center">
+            <div class="radio-card-icon">
+                <img src="./resources/product_images/chain_blue.jpeg" alt="Blue" />
+            </div>
+            <div class="radio-card-label">
+                Blue
+            </div>
+            <div class="radio-card-label-description">
+                Blue chain link: $25.00
+            </div>
+        </div>
+    </div>
+    <!-- Radio Card 3 -->
+    <div class="radio-card radio-card-3" onclick="selectRadioCard('3')">
+        <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+        <div class="radio-card-check">
+          <input type="radio"></input>
+        </div>
+        <!-- Section to display the icon, label, and some additional text -->
+        <div class="text-center">
+            <div class="radio-card-icon">
+                <img src="./resources/product_images/chain_gold.jpeg" alt="Gold" />
+            </div>
+            <div class="radio-card-label">
+                Gold
+            </div>
+            <div class="radio-card-label-description">
+                Gold chain link: $30.00
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>and a charm type:</p>
+
+<div id="radio-cards-container">
+  <!-- Radio Card 4 -->
+  <div class="radio-card2 radio-card2-4" onclick="selectRadioCard2('4')">
+      <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+      <div class="radio-card2-check">
+        <input type="radio"></input>
+      </div>
+      <!-- Section to display the icon, label, and some additional text -->
+      <div class="text-center">
+          <div class="radio-card2-icon">
+              <img src="./resources/product_images/charm_fullsun.jpg" alt="fullsun" />
+          </div>
+          <div class="radio-card2-label">
+              Full Sun
+          </div>
+          <div class="radio-card2-label-description">
+            +$5.00
+          </div>
+      </div>
+  </div>
+  <!-- Radio Card 5 -->
+  <div class="radio-card2 radio-card2-5" onclick="selectRadioCard2('5')">
+      <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+      <div class="radio-card2-check">
+        <input type="radio"></input>
+      </div>
+      <!-- Section to display the icon, label, and some additional text -->
+      <div class="text-center">
+          <div class="radio-card2-icon">
+              <img src="./resources/product_images/charm_halfsun.jpg" alt="halfsun" />
+          </div>
+          <div class="radio-card2-label">
+              Half Sun
+          </div>
+          <div class="radio-card2-label-description">
+            +$5.00
+          </div>
+      </div>
+  </div>
+  <!-- Radio Card 6 -->
+  <div class="radio-card2 radio-card2-6" onclick="selectRadioCard2('6')">
+      <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+      <div class="radio-card2-check">
+        <input type="radio"></input>
+      </div>
+      <!-- Section to display the icon, label, and some additional text -->
+      <div class="text-center">
+          <div class="radio-card2-icon">
+              <img src="./resources/product_images/charm_quartersun.jpg" alt="quartersun" />
+          </div>
+          <div class="radio-card2-label">
+              Quarter Sun
+          </div>
+          <div class="radio-card2-label-description">
+            +$5.00
+          </div>
+      </div>
+  </div>
+  <!-- Radio Card 7 -->
+  <div class="radio-card2 radio-card2-7" onclick="selectRadioCard2('7')">
+    <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+    <div class="radio-card2-check">
+      <input type="radio"></input>
+    </div>
+    <!-- Section to display the icon, label, and some additional text -->
+    <div class="text-center">
+        <div class="radio-card2-icon">
+            <img src="./resources/product_images/charm_silverbar.jpg" alt="silverbar" />
+        </div>
+        <div class="radio-card2-label">
+            Silver Bar
+        </div>
+        <div class="radio-card2-label-description">
+          +$5.00
+        </div>
+    </div>
+</div>
+<!-- Radio Card 8 -->
+<div class="radio-card2 radio-card2-8" onclick="selectRadioCard2('8')">
+  <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+  <div class="radio-card2-check">
+    <input type="radio"></input>
+  </div>
+  <!-- Section to display the icon, label, and some additional text -->
+  <div class="text-center">
+      <div class="radio-card2-icon">
+          <img src="./resources/product_images/charm_goldbar.jpg" alt="goldbar" />
+      </div>
+      <div class="radio-card2-label">
+          Gold Bar
+      </div>
+      <div class="radio-card2-label-description">
+        +$5.00
+      </div>
+  </div>
+</div>
+<!-- Radio Card 9 -->
+<div class="radio-card2 radio-card2-9" onclick="selectRadioCard2('9')">
+  <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+  <div class="radio-card2-check">
+    <input type="radio"></input>
+  </div>
+  <!-- Section to display the icon, label, and some additional text -->
+  <div class="text-center">
+      <div class="radio-card2-icon">
+          <img src="./resources/product_images/charm_goldring.jpg" alt="goldring" />
+      </div>
+      <div class="radio-card2-label">
+          Gold Ring
+      </div>
+      <div class="radio-card2-label-description">
+          +$5.00
+      </div>
+  </div>
+</div>
+<!-- Radio Card 0 -->
+<div class="radio-card2 radio-card2-0 selected" onclick="selectRadioCard2('0')">
+  <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+  <div class="radio-card2-check">
+    <input type="radio"></input>
+  </div>
+  <!-- Section to display the icon, label, and some additional text -->
+  <div class="text-center">
+      <div class="radio-card2-icon">
+          <img src="./resources/product_images/none.png" alt="none" />
+      </div>
+      <div class="radio-card2-label">
+          None
+      </div>
+      <div class="radio-card2-label-description">
+          +$0.00
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+  <p>Please review your selection and add your name, email, shipping address, and Venmo below. You will receive a Venmo request for the price shown. After your order is paid for, it will be packaged and shipped!</p>
 
   <div class="form-wrapper">
   <form 
@@ -57,6 +287,7 @@
     action="https://script.google.com/macros/s/AKfycbwJj-x_cWQkwhdhXV6IZZJszDTLUs3vr7ffKoROWfy6_4wP5h_U39U3NZxfitUVTPMFCw/exec"
     id="chain-form"
   >
+
   <div>
     <label class="form-label" for="firstName">Color</label>
   </div>
@@ -68,7 +299,7 @@
     <label class="form-label" for="charmType">Charm Type</label>
   </div>
   <div>
-    <input class="form-box" name="charm_type" type="text" placeholder="Charm Type">
+    <input class="form-box" name="charm_type" type="text" placeholder="Charm Type" value="None">
   </div>
 
   <div>
@@ -126,17 +357,6 @@
   <div>
     <input class="form-box" name="venmo" type="text" placeholder="@venmo-username">
   </div>
-  
-    <!-- <input name="color" type="text" placeholder="Color" required>
-    <input name="charm_type" type="text" placeholder="Charm Type">
-    <input name="price" type="text" placeholder="Price" required>
-    <input name="name" type="text" placeholder="Name" required>
-    <input name="email" type="email" placeholder="Email" required>
-    <input name="street_address" type="text" placeholder="Street Address" required>
-    <input name="city" type="text" placeholder="City" required>
-    <input name="state" type="text" placeholder="State" required>
-    <input name="zip" type="text" placeholder="Zip" required>
-    <input name="venmo" type="text" placeholder="Venmo" required> -->
     
     <br>
     <button class="submit-button" type="submit">Submit Order</button>
