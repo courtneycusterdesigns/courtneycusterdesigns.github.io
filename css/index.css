@@ -210,6 +210,140 @@
 }
 
 
+/* Style the chain designer */
+#radio-cards-container {
+  margin-top: 5vw;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radio-card {
+  border: 2px solid var(--tan);
+  border-radius: 10px;
+  width: 25vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  padding: 2vw;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.radio-card:hover {
+  border: 2px solid var(--darkbrown);
+  cursor: pointer;
+}
+
+.radio-card-check {
+  display: none;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+}
+
+.radio-card-check i {
+  font-size: 1vw;
+  color: var(--darkbrown);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.radio-card-icon img {
+  width: 25vw;
+}
+
+.radio-card-label {
+  margin-top: 1vw;
+  font-weight: 600;
+  font-size: 4vw;
+}
+
+.radio-card-label-description {
+  margin-top: 1vw;
+  color: var(--darkbrown);
+  font-size: 3vw;
+}
+
+.radio-card.selected {
+  border: 2px solid var(--darkbrown);
+  background-color: var(--tan);
+}
+
+.radio-card.selected .radio-card-check {
+  display: inline-flex;
+}
+
+/* 2 */
+#radio-cards2-container {
+  margin-top: 5vw;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radio-card2 {
+  border: 2px solid var(--tan);
+  border-radius: 10px;
+  width: 25vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  padding: 2vw;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.radio-card2:hover {
+  border: 2px solid var(--darkbrown);
+  cursor: pointer;
+}
+
+.radio-card2-check {
+  display: none;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+}
+
+.radio-card2-check i {
+  font-size: 1vw;
+  color: var(--darkbrown);
+}
+
+.radio-card2-icon img {
+  width: 25vw;
+}
+
+.radio-card2-label {
+  margin-top: 1vw;
+  font-weight: 600;
+  font-size: 4vw;
+}
+
+.radio-card2-label-description {
+  margin-top: 1vw;
+  color: var(--darkbrown);
+  font-size: 3vw;
+}
+
+.radio-card2.selected {
+  border: 2px solid var(--darkbrown);
+  background-color: var(--tan);
+}
+
+.radio-card2.selected .radio-card-check {
+  display: inline-flex;
+}
+
 
 
 /* Style the footer */
