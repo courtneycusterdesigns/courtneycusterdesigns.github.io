@@ -5,6 +5,9 @@
   <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
+    let basePrice = 0;
+    let charmPrice = 0;
+
     const selectRadioCard = (cardNo) => {
       /**
       * Loop through all radio cards, and remove the class "selected" from those elements.
@@ -26,10 +29,10 @@
       // Set the price field value
       const priceField = document.querySelector("input[name='price']");
       const price = selectedCard.querySelector(".radio-card-label-description").innerText;
-      priceField.value = price.substring(price.indexOf("$") + 1);
+      basePrice = parseInt(parseInt(price.substring(price.indexOf("$") + 1)));
+      priceField.value = basePrice + charmPrice;
     };
-  </script>
-  <script>
+    
     const selectRadioCard2 = (cardNo) => {
       /**
       * Loop through all radio cards, and remove the class "selected" from those elements.
@@ -51,11 +54,12 @@
       // Set the price field value
       const priceField = document.querySelector("input[name='price']");
       const price = selectedCard.querySelector(".radio-card2-label-description").innerText;
+      charmPrice = parseInt(price.substring(price.indexOf("$") + 1));
       if(priceField.value == "none"){
-        priceField.value = price.substring(price.indexOf("$") + 1);
+        priceField.value = basePrice;
       }
       else{
-        priceField.value = parseInt(priceField.value) + parseInt(price.substring(price.indexOf("$") + 1));
+        priceField.value = basePrice + charmPrice;
       }
     };
   </script>
