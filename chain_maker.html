@@ -22,6 +22,11 @@
       // Set the hidden field value
       const hiddenField = document.querySelector("input[name='color']");
       hiddenField.value = selectedCard.querySelector(".radio-card-label").innerText;
+
+      // Set the price field value
+      const priceField = document.querySelector("input[name='price']");
+      const price = selectedCard.querySelector(".radio-card-label-description").innerText;
+      priceField.value = price.substring(price.indexOf("$") + 1);
     };
   </script>
   <script>
@@ -42,6 +47,16 @@
       // Set the hidden field value
       const hiddenField = document.querySelector("input[name='charm_type']");
       hiddenField.value = selectedCard.querySelector(".radio-card2-label").innerText;
+
+      // Set the price field value
+      const priceField = document.querySelector("input[name='price']");
+      const price = selectedCard.querySelector(".radio-card2-label-description").innerText;
+      if(priceField.value == "none"){
+        priceField.value = price.substring(price.indexOf("$") + 1);
+      }
+      else{
+        priceField.value = parseInt(priceField.value) + parseInt(price.substring(price.indexOf("$") + 1));
+      }
     };
   </script>
   <script>
@@ -64,9 +79,9 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a class="active" href="chain_maker.html">Chain Creator</a>
-          <a href="shop_earrings.html">Earrings</a>
-          <a href="shop_necklaces.html">Necklaces</a>
+            <a class="active" href="chain_maker.html">Chain Earrings</a>
+          <!-- <a href="shop_earrings.html">Earrings</a>
+          <a href="shop_necklaces.html">Necklaces</a> -->
         </div>
       </div>
       <a href="contact.html">Contact</a>
@@ -76,6 +91,13 @@
   <main>
     <h1>Courtney Custer Designs</h1>
     <h2>Chain Link Earrings</h2>
+    <p>Here are some of my favorite combinations! Take a look around then follow the instructions below to create your custom chain link earrings.</p>
+
+    <img src="./resources/product_images/chain_blue_silverbar.jpeg" alt="silver" width="45%"/>
+    <img src="./resources/product_images/chain_silver_quartersun.jpeg" alt="silver" width="45%"/>
+    <img src="./resources/product_images/chain_silver_fullsun.jpeg" alt="silver" width="45%"/>
+
+    <h3>Make your own!</h3>
       <p>Customize your chain link earrings by selecting a color:</p>
   </main>
 
