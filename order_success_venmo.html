@@ -3,8 +3,12 @@
     <head>
         <title>Courtney Custer Designs</title>
         <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-      </head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="./chain_maker.html">
+            var venmo_link = "https://venmo.com/?txn=pay&audience=public&recipients=@courtcust";
+            //venmo_link += "&amount=" + basePrice + charmPrice;
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 <body>
   <div class="header">
     <a href="index.html" class="logo"><img src="./resources/small.jpg" width="70px"/></a>
@@ -29,11 +33,9 @@
 
     <h3>Thank you for your order!</h3>
     <p>Your order has been placed and will be shipped to you once payment is received.</p>
-    <script src="./chain_maker.html">
-        var venmo_link = "https://venmo.com/?txn=pay&audience=public&recipients=@courtcust";
-        //venmo_link += "&amount=" + basePrice + charmPrice;
-    </script>
-    <a href="venmo_link">Click here to pay with Venmo</a>
+    <a href="https://venmo.com/?txn=pay&audience=public&recipients=@courtcust" target="_blank">Click here to pay with Venmo</a>
+    <p>Or scan the code below:</p>
+    <img src="./resources/venmo_code.jpeg" alt="Venmo QR Code" class="center" href="https://venmo.com/?txn=pay&audience=public&recipients=@courtcust" target="_blank"/>
     <p></p>
     
 
