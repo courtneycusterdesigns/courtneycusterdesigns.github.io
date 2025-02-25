@@ -320,10 +320,10 @@
   >
 
   <div>
-    <label class="form-label" for="firstName">Color</label>
+    <label class="form-label" for="firstName">Chain Link Color</label>
   </div>
   <div>
-    <input class="form-box" name="color" type="text" placeholder="Color" required>
+    <input class="form-box" name="color" type="text" placeholder="Chain Link Color" required>
   </div>
 
   <div>
@@ -404,7 +404,8 @@
           body: data,
         })
         .then(() => {
-          alert("Success!");
+          // alert("Success!");
+          window.location.href = "order_success_venmo.html";
         })
       });
     });
