@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Courtney Custer Designs</title>
+        <link href="./css/index.css" type="text/css" rel="stylesheet">
+        <link href="./css/header.css" type="text/css" rel="stylesheet">
+        <link href="./css/product.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="buttoncontainer" class="header">
+            <script src="./js/header.js"></script>
+        </div>
+        
+        <div class="product_list">
+            <!-- Daisy Chain Silver -->
+            <div class="product">
+                <a href="product_page.html" onclick="sendPage('daisy_chain_silver')"><img src="./img/product_img/earrings/daisy_chain_silver.jpg" class="product_img"/></a>
+                <p class="product_name">Daisy Chain Silver Earrings</p>
+                <p class="product_price">$12.00</p>
+                <button class="add_to_cart_button" onclick="addToCart('daisy_chain_silver', 12.00)">Add to Cart</button>
+            </div>
+
+            <!-- Daisy Chain Gold -->
+            <div class="product">
+                <a href="product_page.html" onclick="sendPage('daisy_chain_silver')"><img src="./img/product_img/earrings/daisy_chain_gold.jpg" class="product_img"/></a>
+                <p class="product_name">Daisy Chain Gold Earrings</p>
+                <p class="product_price">$12.00</p>
+                <button class="add_to_cart_button" onclick="addToCart('daisy_chain_gold', 12.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        
+        <script src="./cart.js"></script>
+        <script src="./product_page.js"></script>
+    </body>
+
+    <br>
+    <footer class="footer">
+        <a href="contact.html" class="logo"><img src="./img/site_img/medium.jpg"  width="25%"/></a>
+    </footer>
+
+
+</html>

@@ -1,0 +1,133 @@
+/* Style the chain designer */
+#color-cards-container {
+    margin-top: 5vw;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-card {
+    border: 0.65vw solid var(--tan);
+    border-radius: 2vw;
+    width: 25vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    padding: 2vw;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.color-card:hover {
+    border: 0.65vw solid var(--darkbrown);
+    cursor: pointer;
+}
+
+.color-card-check {
+    display: none;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+
+.color-card-check i {
+    font-size: 1vw;
+    color: var(--darkbrown);
+}
+
+.color-center {
+    text-align: center;
+}
+
+.color-card-icon img {
+    width: 25vw;
+}
+
+.color-card-label {
+    margin-top: 1vw;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.color-card-label-description {
+    margin-top: 1vw;
+    color: var(--darkbrown);
+    font-size: 3vw;
+}
+
+.color-card.selected {
+    border: 0.65vw solid var(--darkbrown);
+    background-color: var(--tan);
+}
+
+.color-card.selected .color-card-check {
+    display: inline-flex;
+}
+
+/* Charms */
+#charm-cards-container {
+    margin-top: 5vw;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.charm-card {
+    border: 0.65vw solid var(--tan);
+    border-radius: 2vw;
+    width: 25vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    padding: 2vw;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.charm-card:hover {
+    border: 0.65vw solid var(--darkbrown);
+    cursor: pointer;
+}
+
+.charm-card-check {
+    display: none;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+
+.charm-card-check i {
+    font-size: 1vw;
+    color: var(--darkbrown);
+}
+
+.charm-card-icon img {
+    width: 25vw;
+}
+
+.charm-card-label {
+    margin-top: 1vw;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.charm-card-label-description {
+    margin-top: 1vw;
+    color: var(--darkbrown);
+    font-size: 3vw;
+}
+
+.charm-card.selected {
+    border: 0.65vw solid var(--darkbrown);
+    background-color: var(--tan);
+}
+
+.charm-card.selected .charm-card-check {
+    display: inline-flex;
+}

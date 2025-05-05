@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Courtney Custer Designs</title>
+        <link href="./css/index.css" type="text/css" rel="stylesheet">
+        <link href="./css/header.css" type="text/css" rel="stylesheet">
+        <link href="./css/chain_earrings.css" type="text/css" rel="stylesheet">
+        <link href="./css/product.css" type="text/css" rel="stylesheet">
+        <link href="./css/product_page.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="buttoncontainer" class="header">
+            <script src="./js/header.js"></script>
+        </div>
+
+        <main>
+            <h2>Chain Link Earrings</h2>
+            <p>Here are some of my favorite combinations! Take a look around then follow the instructions below to create your chain link earrings.</p>
+            
+            <div class="center">
+                <img src="./img/product_img/chain_earrings/chain_silver_quartersun.jpg" alt="silver" width="100%"/>
+                <br>
+                <img src="./img/product_img/chain_earrings/chain_blue_silverbar.jpg" alt="silver" width="48%"/>
+                <img src="./img/product_img/chain_earrings/chain_gold_fullsun.jpg" alt="silver" width="48%"/>
+                <br>
+                <img src="./img/product_img/chain_earrings/chain_silver_goldring.jpg" alt="silver" width="100%"/>
+            </div>
+
+            <h3>Create your own!</h3>
+            <p>Choose your chain link color:</p>
+        </main>
+
+        <div id="color-cards-container">
+            <!-- Color Card 1 -->
+            <div class="color-card color-card-1 selected" onclick="selectColorCard('1')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="color-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="color-card-icon">
+                        <img src="./img/product_img/chain_earrings/chain_silver.jpeg" alt="silver" />
+                    </div>
+                    <div class="color-card-label">
+                        Silver
+                    </div>
+                    <div class="color-card-label-description">
+                        Silver chain link: $20.00
+                    </div>
+                </div>
+            </div>
+            <!-- Color Card 2 -->
+            <div class="color-card color-card-2" onclick="selectColorCard('2')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="color-card-check">
+                  <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="color-card-icon">
+                        <img src="./img/product_img/chain_earrings/chain_blue.jpeg" alt="Blue" />
+                    </div>
+                    <div class="color-card-label">
+                        Blue
+                    </div>
+                    <div class="color-card-label-description">
+                        Blue chain link: $25.00
+                    </div>
+                </div>
+            </div>
+            <!-- Color Card 3 -->
+            <div class="color-card color-card-3" onclick="selectColorCard('3')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="color-card-check">
+                  <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="color-card-icon">
+                        <img src="./img/product_img/chain_earrings/chain_gold.jpeg" alt="Gold" />
+                    </div>
+                    <div class="color-card-label">
+                        Gold
+                    </div>
+                    <div class="color-card-label-description">
+                        Gold chain link: $30.00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>and a charm type:</p>
+
+        <div id="charm-cards-container">
+            <!-- Charm Card 4 -->
+            <div class="charm-card charm-card-4" onclick="selectCharmCard('4')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="charm-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="charm-card-icon">
+                        <img src="./img/product_img/chain_earrings/charm_fullsun.jpeg" alt="fullsun" />
+                    </div>
+                    <div class="charm-card-label">
+                        Full Sun
+                    </div>
+                    <div class="charm-card-label-description">
+                        +$5.00
+                    </div>
+                </div>
+            </div>
+            <!-- Charm Card 5 -->
+            <div class="charm-card charm-card-5" onclick="selectCharmCard('5')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="charm-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="charm-card-icon">
+                        <img src="./img/product_img/chain_earrings/charm_halfsun.jpeg" alt="halfsun" />
+                    </div>
+                    <div class="charm-card-label">
+                        Half Sun
+                    </div>
+                    <div class="charm-card-label-description">
+                        +$5.00
+                    </div>
+                </div>
+            </div>
+            <!-- Charm Card 6 -->
+            <div class="charm-card charm-card-6" onclick="selectCharmCard('6')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="charm-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="charm-card-icon">
+                        <img src="./img/product_img/chain_earrings/charm_quartersun.jpeg" alt="quartersun" />
+                    </div>
+                    <div class="charm-card-label">
+                        Quarter Sun
+                    </div>
+                    <div class="charm-card-label-description">
+                        +$5.00
+                    </div>
+                </div>
+            </div>
+            <!-- Charm Card 7 -->
+            <div class="charm-card charm-card-7" onclick="selectCharmCard('7')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="charm-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="charm-card-icon">
+                        <img src="./img/product_img/chain_earrings/charm_silverbar.jpeg" alt="silverbar" />
+                    </div>
+                    <div class="charm-card-label">
+                        Silver Bar
+                    </div>
+                    <div class="charm-card-label-description">
+                        +$5.00
+                    </div>
+                </div>
+            </div>
+            <!-- Charm Card 8 -->
+            <div class="charm-card charm-card-8" onclick="selectCharmCard('8')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="charm-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="charm-card-icon">
+                        <img src="./img/product_img/chain_earrings/charm_goldbar.jpeg" alt="goldbar" />
+                    </div>
+                    <div class="charm-card-label">
+                        Gold Bar
+                    </div>
+                    <div class="charm-card-label-description">
+                        +$5.00
+                    </div>
+                </div>
+            </div>
+            <!-- Charm Card 9 -->
+            <div class="charm-card charm-card-9" onclick="selectCharmCard('9')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="charm-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="charm-card-icon">
+                        <img src="./img/product_img/chain_earrings/charm_goldring.jpeg" alt="goldring" />
+                    </div>
+                    <div class="charm-card-label">
+                        Gold Ring
+                    </div>
+                    <div class="charm-card-label-description">
+                        +$5.00
+                    </div>
+                </div>
+            </div>
+            <!-- Charm Card 0 -->
+            <div class="charm-card charm-card-0 selected" onclick="selectCharmCard('0')">
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="charm-card-check">
+                    <input type="radio"></input>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                    <div class="charm-card-icon">
+                        <img src="./img/product_img/chain_earrings/none.png" alt="none" />
+                    </div>
+                    <div class="charm-card-label">
+                        None
+                    </div>
+                    <div class="charm-card-label-description">
+                        +$0.00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>View your selection then click the button below to add to cart!</p>
+        <div class="product_page">
+            <div class="product">
+                <img src="./img/product_img/chain_earrings/chain_silver.jpeg" class="product_img"/>
+                <p class="product_name">Silver Chain Earrings</p>
+                <p class="product_price">$20.00</p>
+                <button class="add_to_cart_button" onclick="addToCart('chain_silver', 20.00)">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+        <script src="./cart.js"></script>
+        <script src="./chain_maker.js"></script>
+        <script src="./product_page.js"></script>
+    </body>
+
+    <br>
+    <footer class="footer">
+        <a href="contact.html" class="logo"><img src="./img/site_img/medium.jpg"  width="25%"/></a>
+    </footer>
+
+
+</html>

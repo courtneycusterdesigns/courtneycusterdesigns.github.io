@@ -1,0 +1,56 @@
+:root {
+    --tan: rgb(192, 155, 96);
+    --hovertan: rgb(152, 108, 61);
+    --darkbrown: rgb(56, 32, 3);
+  }
+
+* {
+    font-family:'Didot', serif;
+    font-weight: 600;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+  }
+
+  .product img {
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 1vw;
+  }
+
+  .product .product_name {
+    font-size: 5vw;
+    color: var(--darkbrown);
+    text-align: left;
+    padding: 0;
+  }
+
+  .product .product_price {
+    font-size: 3vw;
+    color: var(--darkbrown);
+    text-align: left;
+  }
+
+  .add_to_cart_button {
+    background-color: var(--tan);
+    color: var(--darkbrown);
+    border: var(--darkbrown) 0.35vw solid;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw;
+    margin-top: 1vw;
+    cursor: pointer;
+    border-radius: 2vw;
+  }
+
+  .add_to_cart_button:hover {
+    background-color: var(--hovertan);
+  }

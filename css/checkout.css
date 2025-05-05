@@ -1,0 +1,97 @@
+:root {
+    --tan: rgb(192, 155, 96);
+    --hovertan: rgb(152, 108, 61);
+    --darkbrown: rgb(56, 32, 3);
+  }
+
+* {
+    font-family:'Didot', serif;
+    font-weight: 600;
+  }
+
+  .cart .product {
+    display: grid;
+    grid-template-columns: 15vw 1fr 20vw;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    
+    border-color: var(--tan);
+    border-width: 0.5vw;
+    border-style: solid;
+    border-radius: 2vw;
+
+    background-color: var(--darkbrown);
+  }
+
+  .cart .product_name {
+    font-size: 3vw;
+    color: white;
+    text-align: left;
+    padding: 0 5vw;
+  }
+
+  .cart .product_price {
+    font-size: 3vw;
+    color: var(--tan);
+    text-align: left;
+    padding: 0 5vw;
+  }
+
+  .cart .quantity_value {
+    font-size: 3.5vw;
+    color: var(--tan);
+    text-align: left;
+  }
+
+
+  .checkout {
+    padding: 2vw;
+    border-radius: 2vw;
+    border-color: var(--darkbrown);
+    border-width: 0.5vw;
+    border-style: solid;
+    color: var(--darkbrown);
+  }
+
+  .checkout .checkout_form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2vw;
+    border-bottom: 0.5vw solid var(--darkbrown);
+    padding-bottom: 2vw;
+  }
+
+  .checkout .checkout_form input {
+    width: 100%;
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    margin-bottom: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color: var(--tan);
+    color: var(--darkbrown);
+  }
+
+  .checkout .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+  }
+
+  .buttonCheckout {
+    width: 100%;
+    background-color: var(--darkbrown);
+    color: var(--tan);
+    border: var(--tan) 0.35vw solid;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4vw;
+    margin-top: 2vw;
+    cursor: pointer;
+    border-radius: 2vw;
+  }

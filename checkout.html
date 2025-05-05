@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Courtney Custer Designs</title>
+        <link href="./css/index.css" type="text/css" rel="stylesheet">
+        <link href="./css/header.css" type="text/css" rel="stylesheet">
+        <link href="./css/product.css" type="text/css" rel="stylesheet">
+        <link href="./css/checkout.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="buttoncontainer" class="header">
+            <script src="./js/header.js"></script>
+        </div>
+
+        <div class="cart">
+            <h1>Cart</h1>
+            <div class="cart_list">
+                <div class="product">
+                    <img src="./img/product_img/earrings/daisy_chain_silver_cart.jpg" class="product_img"/>
+                    <div class="content">
+                        <div class="product_name">
+                            Daisy Chain Silver Earrings
+                        </div>
+                        <div class="product_price">
+                            $12.00 / product
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <span class="quantity_value">1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <h1>Checkout</h1>
+            <form 
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbxwx7M8P58c7AsUuOqM5yIsB5UJB85foW9yNwgqceFzdZCRUjYajfEDh9x9jCA3WZSR/exec"
+                id="checkoutForm"
+            >
+                <div class="checkout_form">
+                    <input type="hidden" id="cartData" name="cartData" value="">
+                    <input type="hidden" id="cartAmount" name="cartAmount" value="">
+                    <div class="group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="group">
+                        <label for="address">Street Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="group">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="group">
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                </div>
+                <div class="return">
+                    <div class="row">
+                        <div>Total Quantity</div>
+                        <div class="total_quantity">1</div>
+                    </div>
+                    <div class="row">
+                        <div>Total Price</div>
+                        <div class="total_price">$12</div>
+                    </div>
+                </div>
+                <button class="buttonCheckout" type="submit">Submit Order</button>
+            </form>
+        </div>
+
+        <p>Please review your selections and add your name, email, and shipping address. Note the price shown. Once you submit your order you will be redirected to my Venmo. After your order is paid for, it will be packaged and shipped!</p>
+
+        <script src="./checkout.js"></script>
+    </body>
+
+    <br>
+    <footer class="footer">
+        <a href="contact.html" class="logo"><img src="./img/site_img/medium.jpg"  width="25%"/></a>
+    </footer>
+
+
+</html>
