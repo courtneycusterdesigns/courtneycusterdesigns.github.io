@@ -2,49 +2,49 @@
     {
         "id": 10,
         "name": "Silver Chain Earrings",
-        "price": 20.00,
+        "price": 15.00,
         "image": "./img/product_img/chain_earrings/chain_silver.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_silver.jpeg"
     },
     {
         "id": 11,
         "name": "Silver Chain Earrings with Full Sun",
-        "price": 25.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_silver.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_silver.jpeg"
     },
     {
         "id": 12,
         "name": "Silver Chain Earrings with Half Sun",
-        "price": 25.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_silver.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_silver.jpeg"
     },
     {
         "id": 13,
         "name": "Silver Chain Earrings with Quarter Sun",
-        "price": 25.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_silver_quartersun.jpg",
         "cart_image": "./img/product_img/chain_earrings/chain_silver_quartersun.jpg"
     },
     {
         "id": 14,
         "name": "Silver Chain Earrings with Silver Bar",
-        "price": 25.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_silver.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_silver.jpeg"
     },
     {
         "id": 15,
         "name": "Silver Chain Earrings with Gold Bar",
-        "price": 25.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_silver.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_silver.jpeg"
     },
     {
         "id": 16,
         "name": "Silver Chain Earrings with Gold Ring",
-        "price": 25.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_silver_goldring.jpg",
         "cart_image": "./img/product_img/chain_earrings/chain_silver_goldring.jpg"
     },
@@ -53,49 +53,49 @@
     {
         "id": 20,
         "name": "Blue Chain Earrings",
-        "price": 25.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_blue.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_blue.jpeg"
     },
     {
         "id": 21,
         "name": "Blue Chain Earrings with Full Sun",
-        "price": 30.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_blue.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_blue.jpeg"
     },
     {
         "id": 22,
         "name": "Blue Chain Earrings with Half Sun",
-        "price": 30.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_blue.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_blue.jpeg"
     },
     {
         "id": 23,
         "name": "Blue Chain Earrings with Quarter Sun",
-        "price": 30.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_blue.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_blue.jpeg"
     },
     {
         "id": 24,
         "name": "Blue Chain Earrings with Silver Bar",
-        "price": 30.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_blue_silverbar.jpg",
         "cart_image": "./img/product_img/chain_earrings/chain_blue_silverbar.jpg"
     },
     {
         "id": 25,
         "name": "Blue Chain Earrings with Gold Bar",
-        "price": 30.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_blue.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_blue.jpeg"
     },
     {
         "id": 26,
         "name": "Blue Chain Earrings with Gold Ring",
-        "price": 30.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_blue.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_blue.jpeg"
     },
@@ -104,49 +104,49 @@
     {
         "id": 30,
         "name": "Gold Chain Earrings",
-        "price": 30.00,
+        "price": 20.00,
         "image": "./img/product_img/chain_earrings/chain_gold.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_gold.jpeg"
     },
     {
         "id": 31,
         "name": "Gold Chain Earrings with Full Sun",
-        "price": 35.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_gold_fullsun.jpg",
         "cart_image": "./img/product_img/chain_earrings/chain_gold_fullsun.jpg"
     },
     {
         "id": 32,
         "name": "Gold Chain Earrings with Half Sun",
-        "price": 35.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_gold.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_gold.jpeg"
     },
     {
         "id": 33,
         "name": "Gold Chain Earrings with Quarter Sun",
-        "price": 35.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_gold.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_gold.jpeg"
     },
     {
         "id": 34,
         "name": "Gold Chain Earrings with Silver Bar",
-        "price": 35.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_gold.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_gold.jpeg"
     },
     {
         "id": 35,
         "name": "Gold Chain Earrings with Gold Bar",
-        "price": 35.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_gold.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_gold.jpeg"
     },
     {
         "id": 36,
         "name": "Gold Chain Earrings with Gold Ring",
-        "price": 35.00,
+        "price": 25.00,
         "image": "./img/product_img/chain_earrings/chain_gold.jpeg",
         "cart_image": "./img/product_img/chain_earrings/chain_gold.jpeg"
     },
